@@ -2,6 +2,8 @@
 
 import { useEffect } from 'react';
 
+import Logo from '@public/logo.svg';
+
 interface RedirectProps {
   to: string;
 }
@@ -19,7 +21,7 @@ export const Redirect = ({ to }: RedirectProps) => {
 
   return (
     <main className="flex min-h-screen items-center justify-center">
-      <span className="text-[160px]">Hi</span>
+      <Logo className="motion-safe:animate-bounce" />
     </main>
   );
 };
