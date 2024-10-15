@@ -12,6 +12,7 @@ export default function RedirectLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log('process.env', process.env)
   return (
     <>{children}</>
   );
