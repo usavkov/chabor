@@ -6,9 +6,11 @@ import { getMessages } from 'next-intl/server';
 
 import "../globals.scss";
 
-const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
+const { GA_MEASUREMENT_ID } = process.env;
+
 const inter = Inter({ subsets: ["latin"] });
 
+// TODO: should be handled in school org profile
 export const metadata: Metadata = {
   title: "Chabor",
   description: "English language school",
