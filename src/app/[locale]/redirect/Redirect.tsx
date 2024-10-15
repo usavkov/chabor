@@ -11,8 +11,7 @@ interface RedirectProps {
 export const Redirect = ({ to }: RedirectProps) => {
   useEffect(() => {
     const timerId = setTimeout(() => {
-      console.log('to', to);
-      window.location.replace(to);
+      // window.location.replace(to);
     }, 1000);
 
     return () => {

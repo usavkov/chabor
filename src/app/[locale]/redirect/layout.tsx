@@ -7,12 +7,16 @@ export const metadata: Metadata = {
   description: "English language school",
 };
 
+interface RedirectLayoutProps {
+  children: React.ReactNode;
+}
+
 export default function RedirectLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: RedirectLayoutProps) {
   return (
-    <>{children}</>
+    <>
+      {children}
+    </>
   );
 }

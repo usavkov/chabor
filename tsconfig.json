@@ -19,13 +19,13 @@
     ],
     "paths": {
       "@constants": [
-        "./src/app/constants"
+        "./src/constants"
       ],
       "@public/*": [
         "./public/*"
       ],
       "@utils": [
-        "./src/app/utils"
+        "./src/utils"
       ],
     }
   },
