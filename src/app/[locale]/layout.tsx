@@ -4,8 +4,6 @@ import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
-import "../globals.scss";
-
 const { GA_MEASUREMENT_ID } = process.env;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +14,7 @@ export const metadata: Metadata = {
   description: "English language school",
 };
 
-interface RootLayoutProps {
+interface LocaleLayoutProps {
   children: React.ReactNode;
   params: { locale: string };
 }
@@ -24,7 +22,7 @@ interface RootLayoutProps {
 export default async function RootLayout({
   children,
   params: { locale }
-}: RootLayoutProps) {
+}: LocaleLayoutProps) {
   const messages = await getMessages();
 
   return (
